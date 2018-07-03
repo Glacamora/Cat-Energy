@@ -1,0 +1,135 @@
+.header__wrapper {
+  width: 100%;
+}
+
+.header__wrapper-mobile {
+  background-image: url("../img/index-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 305px;
+}
+
+.header__nav-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__nav-logo {
+  svg {
+  }
+}
+
+.header__nav-toggle {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 29px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    box-shadow: 0 9px 0 0 #000, 0 18px 0 0 #000;
+    cursor: pointer;
+  }
+
+  /*&:hover::before {
+    background-color: #fff;
+    box-shadow: 0 10px 0 0 #000, 0 20px 0 0 #000;
+  }
+
+  &:active::before {
+    background-color: #fff;
+    box-shadow: 0 10px 0 0 #000, 0 20px 0 0 #000;
+    opacity: 0.3;
+  }*/
+}
+
+.header__nav-menu {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+.header__nav {
+  position: relative;
+}
+
+.header__nav-name {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header__nav-item {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding: 25px 65px;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:first-of-type {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.header__nav-title {
+  position: absolute;
+  top: 70px;
+  color: #fff;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  p {
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
