@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 15px 20px;
+  padding: 20px;
   margin-bottom: 20px;
 
   &:first-of-type {
@@ -22,14 +22,14 @@
   line-height: 37px;
   font-weight: 400;
   color: #111;
-  text-transform: uppercase;
-  top: -25px;
+  text-transform: @text-transform;
+  top: -33px;
   position: relative;
-  padding-left: 10px;
+  padding-left: 5px;
   margin-bottom: 0;
 
   &_mass {
-    top: -4px;
+    top: -10px;
     margin-bottom: 19px;
   }
 }
@@ -44,15 +44,16 @@
     background-image: url("../img/cat-icon.png");
     width: 35px;
     height: 49px;
-    top: 11px;
-    left: 18px;
+    top: 8px;
+    left: 12px;
   }
 
   &_walk {
     background-image: url("../img/catgo-icon.png");
     width: 67px;
     height: 28px;
-    top: 28px;
+    top: 22px;
+    left: -8px;
   }
 }
 
@@ -67,12 +68,14 @@
     height: 50px;
     border-radius: 50%;
     top: 28px;
-    left: 30px;
+    left: 22px;
   }
 }
 
 .programs__text {
+  font-family: "Arial", sans-serif;
   margin-top: 0;
+  margin-bottom: 23px;
 }
 
 .programs__link {
@@ -81,6 +84,8 @@
   text-transform: uppercase;
   color: #111;
   position: relative;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
 
   &::after {
     content: "";
@@ -90,7 +95,78 @@
     background-position: center;
     width: 24px;
     height: 11px;
-    top: 5px;
-    left: 95px;
+    top: 24px;
+    left: 105px;
   }
+}
+
+@media (min-width: 768px) {
+  .programs {
+    margin-top: 540px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    padding-left: 0;
+    top: 0;
+  }
+
+  .programs__text {
+    width: 54%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .programs__item {
+    padding: 80px 50px 0 50px;
+    min-height: 372px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 88px;
+      left: auto;
+      right: 65px;
+    }
+  }
+
+  .programs__link {
+    border: 0;
+  }
+
+  .programs__icon {
+    position: absolute;
+    left: auto;
+
+    &_sit {
+      background-image: url("../img/cat-icon_tablet.png");
+      width: 140px;
+      height: 194px;
+      top: 76px;
+      right: 95px;
+    }
+
+    &_walk {
+      background-image: url("../img/catgo-icon_tablet.png");
+      width: 268px;
+      height: 112px;
+      top: 137px;
+      right: 33px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
 }

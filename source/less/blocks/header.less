@@ -19,9 +19,8 @@
   width: 100%;
 }
 
-.header__nav-logo {
-  svg {
-  }
+.header__nav-logo-tablet {
+  display: none;
 }
 
 .header__nav-toggle {
@@ -74,7 +73,7 @@
 
 .header__nav-name {
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: @text-transform;
   margin-top: 0;
   margin-bottom: 0;
   color: #000;
@@ -95,7 +94,7 @@
 
 .header__nav-item {
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: @text-transform;
   font-weight: 500;
   text-align: center;
   padding: 25px 65px;
@@ -128,13 +127,21 @@
 
   p {
     line-height: 14px;
-    text-transform: uppercase;
+    text-transform: @text-transform;
     margin-top: 20px;
     margin-bottom: 0;
   }
 }
 
 @media (min-width: 768px) {
+  .header__nav-logo-mobile {
+    display: none;
+  }
+
+  .header__nav-logo-tablet {
+    display: block;
+  }
+
   .header__nav {
     display: flex;
     padding-left: 30px;
@@ -160,7 +167,7 @@
 
   .header__nav-name {
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 19.3px;
     display: inherit;
 
     span {
@@ -171,16 +178,21 @@
   .header__nav-list {
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 15px;
   }
 
   .header__nav-item {
     font-size: 18px;
     text-align: left;
-    padding: 25px 25px;
+    padding: 17px;
     border-bottom: 0;
 
     &:first-of-type {
       border-top: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
     }
   }
 
@@ -189,8 +201,8 @@
     color: #000;
     text-align: left;
     padding-right: 30px;
-    margin-left: 90px;
-    width: 415px;
+    margin-left: 100px;
+    width: 74%;
     top: -10px;
 
     h2 {
@@ -226,7 +238,7 @@
     .header__wrapper-mobile-img {
     background-image: url(../img/index-background-desktop.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     display: block;
     width: 48%;
