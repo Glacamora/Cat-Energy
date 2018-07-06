@@ -1,0 +1,96 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+}
+
+.programs__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+
+  &:first-of-type {
+    margin-top: 23px;
+  }
+}
+
+.programs__title {
+  margin-top: 0;
+  margin-left: 70px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: #111;
+  text-transform: uppercase;
+  top: -25px;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 0;
+
+  &_mass {
+    top: -4px;
+    margin-bottom: 19px;
+  }
+}
+
+.programs__icon {
+  z-index: 999;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  &_sit {
+    background-image: url("../img/cat-icon.png");
+    width: 35px;
+    height: 49px;
+    top: 11px;
+    left: 18px;
+  }
+
+  &_walk {
+    background-image: url("../img/catgo-icon.png");
+    width: 67px;
+    height: 28px;
+    top: 28px;
+  }
+}
+
+.programs__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 28px;
+    left: 30px;
+  }
+}
+
+.programs__text {
+  margin-top: 0;
+}
+
+.programs__link {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #111;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/right_arrow_long.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 11px;
+    top: 5px;
+    left: 95px;
+  }
+}
