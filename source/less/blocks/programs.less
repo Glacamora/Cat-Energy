@@ -168,5 +168,70 @@
 }
 
 @media (min-width: 1440px) {
+  .programs {
+    flex-direction: row;
+    max-width: 1220px;
+    margin: 80px auto;
+  }
 
+  .programs__item {
+    margin-right: 40px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 49px;
+      left: 49px;
+      right: 65px;
+    }
+  }
+
+  .programs__icon {
+    right: auto;
+
+    &_sit {
+      background-image: url("../img/cat-icon_desktop.png");
+      width: 70px;
+      height: 97px;
+      top: 42px;
+      left: 64px;
+    }
+
+    &_walk {
+      background-image: url("../img/catgo-icon_desktop.png");
+      width: 134px;
+      height: 56px;
+      top: 72px;
+      left: 31px;
+    }
+  }
+
+  .programs__title {
+    top: 0;
+    margin-left: 145px;
+  }
+
+  .programs__text {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      top: 26px;
+      left: 130px;
+    }
+  }
 }

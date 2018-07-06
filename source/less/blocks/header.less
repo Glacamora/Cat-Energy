@@ -220,8 +220,11 @@
 
 @media (min-width: 1440px) {
   .header__nav {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .header__nav-wrapper {
@@ -241,7 +244,7 @@
     background-position: center;
     background-size: cover;
     display: block;
-    width: 48%;
+    width: 48.7%;
     min-height: 690px;
     }
   }
@@ -257,7 +260,16 @@
     font-weight: 400;
   }
 
+  .header__nav-title-wrapper {
+    max-width: 1336px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .header__nav-title {
     top: -260px;
+    margin-left: 130px;
+    width: 40%;
+    z-index: 999;
   }
 }
