@@ -1,0 +1,91 @@
+.strategy {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111;
+    margin-top: 0;
+  }
+}
+
+.strategy__item {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: @moderate-green;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &:nth-child(5)::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+.strategy__text {
+  font-family: "Arial", sans-serif;
+  margin-top: 2px;
+  margin-left: 79px;
+  line-height: 18px;
+  min-width: 200px;
+  max-width: 360px;
+}
+
+@media (min-width: 405px) {
+  .strategy__text {
+    margin-top: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .strategy {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 20px;
+    min-height: 600px;
+    border-bottom: 1px solid #cdcdcd;
+
+    h2 {
+      width: 100%;
+    }
+  }
+
+  .strategy__item {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    &::before {
+      top: -57px;
+    }
+  }
+
+  .strategy__text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
